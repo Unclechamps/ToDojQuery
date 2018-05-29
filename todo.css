@@ -1,0 +1,134 @@
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.taskInput {
+  display: flex;
+  align-items: center;
+}
+
+.taskInput p {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.taskInput button {
+  margin-left: 10px;
+  height: 25px;
+  width: 55px;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  background-color: #6091f9;
+  color: #fff;
+  font-size: 16px;
+}
+
+#userInput {
+  height: 25px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  align-items: center;
+}
+
+.toDoList ul {
+  padding-left: 0;
+}
+
+#tasks {
+  width: 75%;
+  margin: auto;
+}
+
+#tasks li {
+  display: flex;
+  list-style: none;
+  width: 75%;
+  margin: 15px auto;
+  background-color: #6091f9;
+  padding: 15px 0;
+  color: white;
+
+
+}
+
+.check {
+  transform: scale(1.5);
+  background-color: transparent;
+  margin: auto 15px;
+  border: solid white;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
+
+li button {
+  margin-left: auto;
+  background-color: transparent;
+  margin-right: 10px;
+  color: white;
+  border: none;
+}
+
+/*Completed*/
+
+.completedList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+  align-items: center;
+}
+
+.completedList ul {
+  padding-left: 0;
+}
+
+#completedItems {
+  width: 75%;
+  margin: auto;
+}
+
+#completedItems li {
+  display: flex;
+  list-style: none;
+  width: 75%;
+  margin: 15px auto;
+  background-color: #6091f9;
+  padding: 15px 0;
+  color: white;
+
+
+}
+
+@media only screen and (max-width: 800px) {
+  #tasks, #completedItems {
+    width: 100%;
+  }
+
+  .completedList, .toDoList {
+    width: 100%;
+  }
+
+  #tasks li, #completedItems li {
+    width: 80%;
+  }
+}

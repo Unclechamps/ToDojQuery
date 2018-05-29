@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo jQuery</title>
+    <link href="todo.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+    <div class="header">
+      <h1>My To Do</h1>
+    <div class="taskInput">
+      <p>Enter tasks: </p>
+      <input type="text" id="userInput" placeholder="Todo title..." name="input" required>
+      <button type="button" id="addbtn">Add</button>
+    </div>
+    </div>
+    <div class="toDoList">
+      <h4>Pending Tasks</h4>
+      <ul id="tasks" class="sortable">
+
+      </ul>
+    </div>
+    <div class="completedList">
+      <h4>Completed Tasks</h4>
+      <ul id="completedItems" class="sortable"></ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
