@@ -19,11 +19,11 @@ $('#addbtn').click(function(){
 
   checkbox.change(function () {
     if($(this).is(":checked")) {
-    let li = $(this).parent()
-    completedItems.append(li)
+      let li = $(this).parent()
+      completedItems.append(li)
   } else {
-    let li = $(this).parent()
-    taskList.append(li)
+      let li = $(this).parent()
+      taskList.append(li)
   }
 
 
